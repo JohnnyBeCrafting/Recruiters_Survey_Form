@@ -59,6 +59,11 @@ body{
   height: 100vh;
 }
 
+footer p {
+    font-size: 12px;
+    text-align: center;
+}
+
 
 .page{
     display: flex;
