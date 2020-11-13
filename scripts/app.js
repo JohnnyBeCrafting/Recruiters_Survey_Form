@@ -1,6 +1,6 @@
 // declare globals
 
-let submitBtn =  document.getElementById('submit__btn');
+let submitBtn =  document.getElementById('submit');
 let video_1 = document.getElementById('video__one');
 let video_2 = document.getElementById('video__two');
 
