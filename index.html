@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <main class="main__section">
+        <div class="page">
+            <div class="page__avatar">
+                <div class="page__video video--1">
+                    <div class="video__container">
+                        <video id="video__one" width="100%" height="100%" >
+                            <source src="assets/videos/video_1.mp4" type="video/mp4" />
+                        </video>
+                        <video id="video__two" width="100%" height="100%" class="hidden">
+                            <source src="assets/videos/video_2.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <div class="page__video video--2"></div>
+            </div>
+            <div class="page__form">
+                <div class="page__form__unit">
+                    <h1 class="page__form__headline" id="title"><span>🎉</span>Hey you, Product Design/UX Recruiter!
+                    </h1>
+                    <p id="description" class="page__form__headline__blurb">Let's connect. My name is Johnny Garces and
+                        I'm a UX Designer with proven business <a href='https://www.johnnygarces.design'
+                            target="_blank">results</a>.</p>
+                    <div class="form__container">
+                        <form action="https://formspree.io/f/xzbkvejo" class="form" id="survey-form" method="POST">
+                            <div class="form__region">
+                                <label class="label--block label__headline" for="company">What's your company's
+                                    name?</label>
+                                <input id="company" type="text" required>
+                            </div>
+                            <div class="form__region">
+                                <label class="label--block label__headline" for="company">Got an email address?</label>
+                                <input id="email" type="email" required>
+                            </div>
+                            <div class="form__region">
+                                <label class="label--block label__headline" for="company">Which roles do you recruit
+                                    for?</label>
+                                <div class="label__grp">
+                                    <input type="checkbox" id="product__design" name="role" value="product__design">
+                                    <label for="product__design"> Product Design</label><br>
+                                </div>
+                                <div class="label__grp">
+                                    <input type="checkbox" id="ux__research" name="role" value="ux__research">
+                                    <label for="ux__research"> UX Research</label><br>
+                                </div>
+                                <div class="label__grp">
+                                    <input type="checkbox" id="front__end" name="role" value="front__end">
+                                    <label for="front__end"> Front-end development</label><br>
+                                </div>
+                                <div class="label__grp">
+                                    <input type="checkbox" id="other" name="role" value="other">
+                                    <label for="other">Other</label>
+                                </div>
+                            </div>
+                            <div class="form__region">
+                                <label class="label--block label__headline" for="company">Do you recruit self-taught
+                                    folk?</label>
+                                <input type="radio" id="male" name="self_taught" value="heck_yes">
+                                <label for="male">heck yes</label><br>
+                                <input type="radio" id="female" name="self_taught" value="eh">
+                                <label for="female">eh</label><br>
+                                <input type="radio" id="other" name="self_taught" value="no">
+                                <label for="other">no</label>
+                            </div>
+                            <div class="form__region">
+                                <label class="label--block label__headline" for="company_size">is your company:</label>
+                                <select name="size" id="company_size">
+                                    <option value="early">early stage</option>
+                                    <option value="growth">growth stage</option>
+                                    <option value="large">large and worldwide</option>
+                                </select>
+                            </div>
+                            <div class="form__region">
+                                <label for="success" class="label__headline label--inline-block">What makes a designer
+                                    successful at your company? Any tips?</label>
+                                <textarea name="" id="success" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="form__region">
+                                <button type="submit" id="submit__btn" value="Send">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/app.js" async defer></script>
+</body>
+
+</html>
